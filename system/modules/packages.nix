@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, inputs, ... }:
 
 {
   programs.adb.enable = true;
@@ -8,6 +8,7 @@
   programs.nm-applet.enable = true;
 
   environment.systemPackages = with pkgs; [
+    inputs.npgh.defaultPackage.x86_64-linux
     acpi
     bleachbit
     brave

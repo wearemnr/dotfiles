@@ -10,7 +10,11 @@
     utils.url = "github:gytis-ivaskevicius/flake-utils-plus/staging";
     nur = {
       url = "github:nix-community/NUR";
-      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.nixpkgs.follows = "unstable";
+    };
+    npgh = {
+      url = "github:seppeljordan/nix-prefetch-github";
+      inputs.nixpkgs.follows = "unstable";
     };
   };
 
