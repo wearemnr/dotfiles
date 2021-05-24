@@ -15,6 +15,7 @@
     npgh = {
       url = "github:seppeljordan/nix-prefetch-github";
       inputs.nixpkgs.follows = "unstable";
+      inputs.flake-utils.follows = "utils";
     };
   };
 
@@ -63,11 +64,11 @@
               home-manager.useUserPackages = true;
               home-manager.useGlobalPkgs = true;
             }
-             ({ pkgs, ... }: {
-              home-manager.users.mbpnix = { ... }: { imports = [ ./home/home.nix ]; };
-              environment.shellAliases = {
-                nix-repl = "nix repl ${inputs.utils.lib.repl}";
-              };
+            ({ pkgs, ... }: {
+             home-manager.users.mbpnix = { ... }: { imports = [ ./home/home.nix ]; };
+             environment.shellAliases = {
+               nix-repl = "nix repl ${inputs.utils.lib.repl}";
+             };
             })
           ];
         };
