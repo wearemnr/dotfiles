@@ -9,6 +9,6 @@
     maxCacheTtl = 60;
     maxCacheTtlSsh = 60;
     pinentryFlavor = "gtk2";
-    sshKeys = [ "E03DB351FCA8174D7426B9F25C0F403811277B4C" ];
+    sshKeys = [ "A05DAB5A9E202C38CA43ED4420B2DA8EE9CEDFAA" ];
   };
 }

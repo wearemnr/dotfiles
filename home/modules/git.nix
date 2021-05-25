@@ -7,7 +7,7 @@
     userEmail = "wearemnr@pm.me";
     signing = {
       signByDefault = true;
-      key = "68647AE2";
+      key = "EF186569";
     };
     extraConfig = {
       core.editor = "vim";
